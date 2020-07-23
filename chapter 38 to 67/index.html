@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 9</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- ----- Chapter # 43-48 and Exercise # 1 ----- -->
+    <h1>Chapter # 43-48 and Exercise # 1</h1>
+    <div class="clickme">
+        <a href="JavaScript:void(0)" onclick="alert('Hello World')">Click me</a>
+    </div>
+    <hr>
+
+    <!-- ----- Chapter # 43-48 and Exercise # 2 ----- -->
+    <h1>Chapter # 43-48 and Exercise # 2</h1>
+    <div class="mobile-main">
+        <div class="mobile">
+            <img src="images/GalaxyC7.jpg" alt="" onclick="showMessage()">
+            <h5>Samsung Galaxy C7</h5>
+        </div>
+        <div class="mobile">
+            <img src="images/OppoA83-s.jpg" alt="" onclick="showMessage()">
+            <h5>Oppo A83</h5>
+        </div>
+        <div class="mobile">
+            <img src="images/OppoReno3-s.jpg" alt="" onclick="showMessage()">
+            <h5>Oppo Reno 3</h5>
+        </div>
+        <div class="mobile">
+            <img src="images/SamsungGalaxyS9.jpg" alt="" onclick="showMessage()">
+            <h5>Samsung Galaxy S9</h5>
+        </div>
+    </div>
+    <hr>
+
+    <!-- ----- Chapter # 43-48 and Exercise # 3 ----- -->
+    <h1>Chapter # 43-48 and Exercise # 3</h1>
+    <table class="student-table" id="student-table">
+        <tr id="rowHeading">
+            <th>Index</th>
+            <th>Name</th>
+            <th>Class</th>
+            <th></th>
+        </tr>
+        <tr id="row1">
+            <td>0</td>
+            <td>Asad</td>
+            <td>10</td>
+            <td><button onclick="deleteRow('row1')" class="btnDelete">Delete</button></td>
+        </tr>
+        <tr id="row2">
+            <td>1</td>
+            <td>Usman</td>
+            <td>10</td>
+            <td><button onclick="deleteRow('row2')" class="btnDelete">Delete</button></td>
+        </tr>
+        <tr id="row3">
+            <td>2</td>
+            <td>Ahmed</td>
+            <td>9</td>
+            <td><button onclick="deleteRow('row3')" class="btnDelete">Delete</button></td>
+        </tr>
+        <tr id="row4">
+            <td>3</td>
+            <td>Raza</td>
+            <td>10</td>
+            <td><button onclick="deleteRow('row4')" class="btnDelete">Delete</button></td>
+        </tr>
+        <tr id="row5">
+            <td>4</td>
+            <td>Waqas</td>
+            <td>9</td>
+            <td><button onclick="deleteRow('row5')" class="btnDelete">Delete</button></td>
+        </tr>
+        <tr id="row6">
+            <td>5</td>
+            <td>Hassan</td>
+            <td>8</td>
+            <td><button onclick="deleteRow('row6')" class="btnDelete">Delete</button></td>
+        </tr>
+        <tr id="row7">
+            <td>6</td>
+            <td>Bilal</td>
+            <td>8</td>
+            <td><button onclick="deleteRow('row7')" class="btnDelete">Delete</button></td>
+        </tr>
+        <tr id="row8">
+            <td>7</td>
+            <td>Zeeshan</td>
+            <td>10</td>
+            <td><button onclick="deleteRow('row8')" class="btnDelete">Delete</button></td>
+        </tr>
+        <tr id="row9">
+            <td>8</td>
+            <td>Ali</td>
+            <td>9</td>
+            <td><button onclick="deleteRow('row9')" class="btnDelete">Delete</button></td>
+        </tr>
+        <tr id="row10">
+            <td>9</td>
+            <td>Iqbal</td>
+            <td>10</td>
+            <td><button onclick="deleteRow('row10')" class="btnDelete">Delete</button></td>
+        </tr>
+    </table>
+    <hr>
+
+
+    <!-- ----- Chapter # 43-48 and Exercise # 4 ----- -->
+    <h1>Chapter # 43-48 and Exercise # 4</h1>
+    <div class="wallpaper-image">
+        <img class="wallpaper" src="images/wallpaper1.jpg" onmouseover="src='images/wallpaper2.jpg'"
+            onmouseout="src='images/wallpaper1.jpg'" alt="">
+    </div>
+    <hr>
+
+
+    <!-- ----- Chapter # 43-48 and Exercise # 5 ----- -->
+    <h1>Chapter # 43-48 and Exercise # 5</h1>
+    <div class="counter-main">
+        <h2 class="counter-heading">Counter</h2>
+        <h4 id="counter" class="counter">0</h4>
+        <button class="btnIncrease" onclick="incBtn()">Increment</button>
+        <button class="btnDecrease" onclick="decBtn()">Decrement</button>
+    </div>
+    <hr>
+
+
+    <!-- ----- Chapter # 49-52 and Exercise # 1 ----- -->
+    <h1>Chapter # 49-52 and Exercise # 1</h1>
+    <div class="main-form">
+        <div class="inputForm">
+            <h2 class="signupHeading">SignUp Form</h2>
+            <form action="" class="signupForm">
+                <label for="firstName" class="lbl">First Name : </label>
+                <input type="text" id="first-Name" class="inputFName"><br>
+                <label for="lastName" class="lbl">Last Name : </label>
+                <input type="text" id="last-Name" class="inputLName"><br>
+                <label for="" class="lbl">Gender : </label>
+                <input type="radio" id="male" class="radioMale" name="gender" value="Male">
+                <label for="male" class="lblMale">Male </label>
+                <input type="radio" id="female" class="radioFemale" name="gender" value="Female">
+                <label for="female" class="lblFemale">Female </label><br>
+                <label for="dob" class="lbl">Date of Birth : </label>
+                <input type="date" id="dob" class="inputDate"><br>
+                <label for="email" class="lbl">Email : </label>
+                <input type="text" id="mail" class="inputEmail"><br>
+                <p class="submitArea"><button type="button" id="btnSubmit" class="btnSubmit"
+                        onclick="showForm()">Submit</button></p>
+            </form>
+        </div>
+        <div class="displayForm" id="displayForm">
+            <h2>SignUp Form</h2>
+            <span class="fields">Full Name : </span>
+            <span id="fNameValue" class="fNameValue formValue"></span><br>
+            <span class="fields">Gender : </span>
+            <span id="genderValue" class="genderValue formValue"></span><br>
+            <span class="fields">Date of Birth : </span>
+            <span id="dobValue" class="dobValue formValue"></span><br>
+            <span class="fields">Email : </span>
+            <span id="emailValue" class="emailValue formValue"></span>
+        </div>
+    </div>
+    <hr>
+
+
+    <!-- ----- Chapter # 49-52 and Exercise # 2 ----- -->
+    <h1>Chapter # 49-52 and Exercise # 2</h1>
+    <div class="item-detail">
+        <h3>Detail</h3>
+        <p id="itemDetail">Lorem ipsum dolor sit amet consectetur adipisicing elit. <a href="JavaScript:void(0)"
+                id="showmore" onclick="showMore()">show more </a></p>
+    </div>
+    <hr>
+
+    <!-- ----- Chapter # 49-52 and Exercise # 3 ----- -->
+    <h1>Chapter # 49-52 and Exercise # 3</h1>
+    <div class="main-student-data">
+        <div class="studentDataForm">
+            <h2><u>Enter Student Data</u></h2>
+            <form action="" id="student-data">
+                <label for="" class="stdNameLabel">Name : </label>
+                <input type="text" id="student-name" class="stdNameInput">
+                <label for="" class="stdClassLabel">Class : </label>
+                <input type="text" id="student-class" class="stdClassInput">
+                <button type="button" onclick="addStudentData()" class="btnAdd">Add</button>
+            </form>
+        </div>
+
+        <div class="studentDataTable">
+            <h2><u>Student Data Record</u></h2>
+            <table id="student-data-table">
+                <tr>
+                    <th>S No.</th>
+                    <th>Name</th>
+                    <th>Class</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <hr>
+
+
+    <!-- ----- Chapter # 53-57 and Exercise # 2 ----- -->
+    <h1>Chapter # 53-57 and Exercise # 2</h1>
+    <div id="pictures">
+    </div>
+    <div id="modal">
+        <div>
+            <a href="JavaScript:void(0)" class="btnCancel" onclick="onClosedImagModal()">X</a>
+        </div>
+        <img src="" id="modal-pic" alt="">
+    </div>
+    <hr>
+
+
+
+    <!-- ----- Chapter # 58-67 and Exercise # 1 ----- -->
+    <h1>Chapter # 58-67 and Exercise # 1</h1>
+    <div>
+        <h2> DOM </h2>
+        <div id="form-content" class="content">
+            <label for="first-name">First Name</label>
+            <input type="text" id="first-name" />
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name" />
+            <label for="email">Email</label>
+            <input type="text" id="email" />
+        </div>
+        <div id="main-content" class="content"
+        ><p class="render"> First Name : Alex</p
+            ><p class="render" id="lastName">Last Name: Bank</p
+            ><p class="render"> Email : alexbank@example.com</p
+            ><p class="render"> Country : Pakistan </p
+            ><p class="render"> contact : +92 300 1234567</p
+        ></div>
+    </div>
+    <hr>
+
+</body>
+<script src="app.js"></script>
+
+</html>
